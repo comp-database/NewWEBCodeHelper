@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C</title>
+
+    <!-- AOS CDN Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS Stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/3d5c46f6e6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest version of jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="container">
+      <button
+        class="sidebar"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#staticBackdrop"
+        aria-controls="staticBackdrop"
+      >
+        <i
+          class="fa-solid fa-bars fa-2xl"
+          style="color: #000000; border: none"
+        ></i>
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start sidebar-start"
+        data-bs-backdrop="static"
+        tabindex="-1"
+        id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title sidebar-title" id="staticBackdropLabel">DashBoard</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body sidebar-body">
+          <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="/C.html">RoadMap</a></li>
+            <li><a href="/test.html">Test</a></li>
+            <li><a href="/mentors.html">Mentors Support</a></li>
+            <li><a href="/compiler.html">Compiler</a></li>
+          </ul>
+          <button id="signout" class="btn btn-outline-dark sidebar-logout"><a href="/index.html">Logout</a></button>
+        </div>
+      </div>
+
+      <!-- C Programing -->
+
+      <div id="progress-container">
+        <svg id="progressWheel" width="120" height="120">
+          <circle id="progress-bg" r="50" cx="60" cy="60"></circle>
+          <circle id="progress" r="50" cx="60" cy="60"></circle>
+          <text x="60" y="60" text-anchor="middle" dy="8">0%</text>
+        </svg>
+      </div>
+
+      <h1>C Programming</h1>
+      <hr style="color: white" class="my-5" />
+      
+      <nav class="navbar navbar-expand-lg bg-dark ">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse inbar-div " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item inbar-nav">
+                <a class="nav-link active text-white" aria-current="page" href="basic.html"
+                  >Videos</a
+                >
+              </li>
+              <li class="nav-item inbar-nav">
+                <a class="nav-link text-white" href="/images/basic-concepts.pdf">Notes</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row">
+        <div
+          class="basic-concept col-sm-12 col-md-6 col-lg-4"
+          data-aos="fade-right"
+        >
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/4OGMB4Fhh50"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <button
+            onclick="updateProgressWheel(10)"
+            class="btn btn-primary"
+            id="button1"
+          >
+            Completed
+          </button>
+        </div>
+        <div
+          class="basic-concept col-sm-12 col-md-6 col-lg-4"
+          data-aos="fade-down"
+        >
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/4OGMB4Fhh50"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <button
+            onclick="updateProgressWheel(10)"
+            class="btn btn-primary"
+            id="button2"
+          >
+            Completed
+          </button>
+        </div>
+        <div
+          class="basic-concept col-sm-12 col-md-6 col-lg-4"
+          data-aos="fade-left"
+        >
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/fO4FwJOShdc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <button
+            onclick="updateProgressWheel(10)"
+            class="btn btn-primary"
+            id="button3"
+          >
+            Completed
+          </button>
+        </div>
+        <div
+          class="basic-concept col-sm-12 col-md-6 col-lg-4"
+          data-aos="fade-right"
+        >
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/Rl9w0hVxuRw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <button
+            onclick="updateProgressWheel(10)"
+            class="btn btn-primary"
+            id="button4"
+          >
+            Completed
+          </button>
+        </div>
+        <div
+          class="basic-concept col-sm-12 col-md-6 col-lg-4"
+          data-aos="fade-down"
+        >
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/VXol2-SoUy8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <button
+            onclick="updateProgressWheel(10)"
+            class="btn btn-primary"
+            id="button5"
+          >
+            Completed
+          </button>
+        </div>
+        <div
+          class="basic-concept col-sm-12 col-md-6 col-lg-4"
+          data-aos="fade-left"
+        >
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/_9bAlgRzlkc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <button
+            onclick="updateProgressWheel(10)"
+            class="btn btn-primary"
+            id="button6"
+          >
+            Completed
+          </button>
+        </div>
+        <div
+          class="basic-concept col-sm-12 col-md-6 col-lg-4"
+          data-aos="fade-right"
+        >
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/bUryucFPC6I"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <button
+            onclick="updateProgressWheel(10)"
+            class="btn btn-primary"
+            id="button7"
+          >
+            Completed
+          </button>
+        </div>
+        <div
+          class="basic-concept col-sm-12 col-md-6 col-lg-4"
+          data-aos="fade-down"
+        >
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/nwfoxcXgs8o"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <button
+            onclick="updateProgressWheel(10)"
+            class="btn btn-primary"
+            id="button8"
+          >
+            Completed
+          </button>
+        </div>
+        <div
+          class="basic-concept col-sm-12 col-md-6 col-lg-4"
+          data-aos="fade-left"
+        >
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/QncEuobXjvw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <button
+            onclick="updateProgressWheel(10)"
+            class="btn btn-primary"
+            id="button9"
+          >
+            Completed
+          </button>
+        </div>
+        <div
+          class="basic-concept col-sm-12 col-md-6 col-lg-4"
+          data-aos="fade-right"
+        >
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/QncEuobXjvw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <button
+            onclick="updateProgressWheel(10)"
+            class="btn btn-primary"
+            id="button10"
+          >
+            Completed
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/script.js"></script>
+
+    <script>
+      var currentProgress = 0;
+      var clickedButtons = {};
+
+      function updateProgressWheel(buttonId, increment) {
+        if (!clickedButtons[buttonId]) {
+          var newProgress = currentProgress + increment;
+          if (newProgress > 100) {
+            newProgress = 100;
+          }
+          var progress = document.getElementById("progress");
+          var circumference = 2 * Math.PI * progress.r.baseVal.value;
+          var offset = circumference - (newProgress / 100) * circumference;
+          progress.style.strokeDashoffset = offset;
+          var text = document.querySelector("#progressWheel text");
+          text.textContent = newProgress + "%";
+          currentProgress = newProgress;
+          clickedButtons[buttonId] = true;
+        }
+      }
+
+      var button1 = document.getElementById("button1");
+      var button2 = document.getElementById("button2");
+      var button3 = document.getElementById("button3");
+      var button4 = document.getElementById("button4");
+      var button5 = document.getElementById("button5");
+      var button6 = document.getElementById("button6");
+      var button7 = document.getElementById("button7");
+      var button8 = document.getElementById("button8");
+      var button9 = document.getElementById("button9");
+      var button10 = document.getElementById("button10");
+
+      button1.onclick = function () {
+        updateProgressWheel("button1", 10);
+      };
+
+      button2.onclick = function () {
+        updateProgressWheel("button2", 10);
+      };
+
+      button3.onclick = function () {
+        updateProgressWheel("button3", 10);
+      };
+
+      button4.onclick = function () {
+        updateProgressWheel("button4", 10);
+      };
+
+      button5.onclick = function () {
+        updateProgressWheel("button5", 10);
+      };
+
+      button6.onclick = function () {
+        updateProgressWheel("button6", 10);
+      };
+
+      button7.onclick = function () {
+        updateProgressWheel("button7", 10);
+      };
+
+      button8.onclick = function () {
+        updateProgressWheel("button8", 10);
+      };
+
+      button9.onclick = function () {
+        updateProgressWheel("button9", 10);
+      };
+
+      button10.onclick = function () {
+        updateProgressWheel("button10", 10);
+      };
+    </script>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        offset: 350,
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>

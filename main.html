@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- AOS CDN Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS Stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/3d5c46f6e6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest version of jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body class="bg-dark">
+    <!-- Navbar -->
+    <div class="d-flex justify-content-around text-center">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar fixed-top">
+        <img class="brand-img" src="/images/brand.png" alt="" />
+        <a class="navbar-brand brand-txt" href="#">CODE HELPER</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark navbar-dark bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel "
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav flex-grow-1 pe-3 d-flex justify-content-center"
+              style="text-align: center; align-items: center"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">CONTACT</a>
+              </li>
+            </ul>
+            <button
+              id="signout"
+              class="btn btn-outline-warning btn-lg download-btn"
+              style="margin: 0rem 5rem"
+            >
+              <a href="/index.html">Logout</a>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Main-Page -->
+    <div class="main">
+      <img
+        class="main-image"
+        src="https://wallpapercave.com/wp/wp4405841.jpg"
+        alt=""
+      />
+
+      <div>
+        <h1 class="main-image-text" data-aos="zoom-in">
+          "Learning to code is useful no matter what your career ambitions are."
+        </h1>
+      </div>
+      <div class="language-container" data-aos="fade-up">
+        <div class="row row-cols-2 row-cols-md-4">
+          <div class="col">
+            <div class="language-card">
+              <img
+                src="https://techworm.net/programming/wp-content/uploads/2018/09/c-programming-1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">C Programming</h5>
+                <p class="card-text lang-text">Low-level and fast language.</p>
+                <a href="/C.html" class="btn btn-primary lang-btn"
+                  >Start Learning</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="language-card">
+              <img
+                src="https://track2traininginstitute.files.wordpress.com/2021/06/1522635669452_11.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">C ++</h5>
+                <p class="card-text lang-text">
+                  Versatile object-oriented language.
+                </p>
+                <a href="#" class="btn btn-primary lang-btn">Start Learning</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="language-card">
+              <img
+                src="https://getcodify.com/wp-content/uploads/2016/10/Python_logo.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Python</h5>
+                <p class="card-text lang-text">
+                  Easy-to-learn scripting language.
+                </p>
+                <a href="#" class="btn btn-primary lang-btn">Start Learning</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="language-card">
+              <img
+                src="https://gtecvirtualuniversity.com/wp-content/uploads/2020/05/java-5.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">JAVA</h5>
+                <p class="card-text lang-text">Popular enterprise language.</p>
+                <a href="#" class="btn btn-primary lang-btn">Start Learning</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-text text-center m-5">
+          <h1>"Code Your Dreams into Reality"</h1>
+          <br />
+          <i
+            >"Programming is not about what you know, it's about what you can
+            figure out." - Chris Pine</i
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer" data-aos="fade-down">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/index.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        offset: 350,
+        duration: 1000,
+      });
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyD9szz1Lu3vApAXL9rcch3d6dJ2eaXS81g",
+        authDomain: "code-helper-e22c0.firebaseapp.com",
+        databaseURL: "https://code-helper-e22c0-default-rtdb.firebaseio.com",
+        projectId: "code-helper-e22c0",
+        storageBucket: "code-helper-e22c0.appspot.com",
+        messagingSenderId: "599658171378",
+        appId: "1:599658171378:web:5dee9b9a5579dd7a07f96b",
+        measurementId: "G-45TH1MW2P8",
+      };
+
+      {
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const signoutButton = document.querySelector("#signout");
+        signoutButton.addEventListener("click", () => {
+          auth.signOut().then(() => {
+            window.location.href = "/index.html";
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

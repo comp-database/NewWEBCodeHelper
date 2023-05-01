@@ -1,0 +1,55 @@
+.customer-row {
+  position: relative;
+  left: 0vw;
+}
+.customer-review {
+  height: 70vh;
+  color: white;
+  text-align: center;
+}
+
+.card {
+  padding: 2rem 1rem;
+  margin-left: 10rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  background-color: #d3d3d322;
+  max-width: 20rem;
+}
+.card-title {
+  margin: 1rem;
+}
+.container-customer {
+  margin: 20rem 0rem;
+  padding: 5% 0%;
+}
+
+.fa-star {
+  color: yellow;
+}
+
+.review-card {
+  background-color: rgba(255, 255, 255, 0.21);
+  position: relative;
+  top: 25vh;
+}
+
+.review-form-image {
+  width: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 343vh;
+}
+
+.review-text {
+  color: white;
+  position: relative;
+  left: 12vw;
+  top: 40vh;
+}
+
+#review-form input,
+label,
+textarea {
+  margin: 1rem 0;
+}

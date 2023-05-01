@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,700&display=swap");
+
+/* For All */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  padding: 5% 5%;
+}
+
+
+input {
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+input:hover {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+img {
+  object-fit: cover;
+}
+
+li {
+  padding: 0 2rem;
+}
+
+ul {
+  padding: 0rem 0.5rem;
+}
+
+/* Navbar */
+
+.brand-txt {
+  font-size: 2rem;
+}
+.navbar-brand {
+  padding-right: 4rem;
+}
+
+.download-btn a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1rem;
+  padding: 0.4rem 2rem;
+}
+
+.download-btn:hover {
+  cursor: pointer;
+  background-color: #ffc107;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px #d1bb78;
+}
+
+/* Title */
+
+.title-image {
+  width: 100%;
+  height: 110vh;
+}
+
+.title-btn:hover {
+  box-shadow: 5px 5px 2px #d1bb78;
+}
+.title-text {
+  font-weight: bold;
+  font-size: 3.5rem;
+  position: absolute;
+  color: white;
+  padding: 5rem;
+  top: 30vh;
+}
+
+.brand-img {
+  width: 5vw;
+  margin-left: 3rem;
+}
+
+.download-btn {
+  margin: 0rem 2rem;
+}
+
+/* About us */
+
+.about-us-image {
+  width: 40vw;
+  position: relative;
+  top: 8vh;
+}
+.about-us-head {
+  color: white;
+  font-size: 4rem;
+  margin: 2rem 0rem;
+}
+
+.about-us-para {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* download page */
+
+.download-page {
+  width: 100%;
+  position: absolute;
+  height: 110vh;
+  z-index: -100;
+}
+
+.download-text {
+  top: 30vh;
+  font-weight: bold;
+  color: white;
+  font-size: 2rem;
+  position: relative;
+  width: 40vw;
+}
+
+.download-btn2 {
+  padding: 0.5rem 5rem;
+}
+.download-btn2:hover {
+  cursor: pointer;
+  background-color: #ffc107;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px #d1bb78;
+}
+
+.download-container {
+  height: 100vh;
+}
+
+/* Customer Review */
+
+.customer-row {
+  position: relative;
+  left: 0vw;
+}
+.customer-review {
+  height: 70vh;
+  color: white;
+  text-align: center;
+}
+
+.card {
+  padding: 2rem 1rem;
+  margin-left: 10rem;
+  background-color: #d3d3d322;
+  max-width: 20rem;
+}
+.card-title {
+  margin: 1rem;
+}
+.container-customer {
+  margin: 20rem 0rem;
+  padding: 5% 0%;
+}
+
+/* Main-Page */
+
+.main-image {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.language-card {
+  margin: 1rem;
+  background-color: whitesmoke;
+  width: 20rem;
+  border-radius: 20px;
+}
+
+.language-container {
+  margin: 6rem 3rem;
+}
+
+.card-img-top {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 11rem;
+}
+
+.lang-btn {
+  margin: 1rem;
+}
+
+.lang-text {
+  padding: 0 1rem;
+}
+
+.main-text {
+  color: white;
+  margin: 2rem 0;
+}
+
+.main-image-text {
+  text-align: center;
+  color: white;
+  padding: 0 10%;
+  position: absolute;
+  top: 45vh;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 4rem;
+  font-family: cursive;
+}
+/* C Programming */
+
+.roadmap-card {
+  color: white;
+  margin: 2rem 2.4rem;
+}
+
+iframe {
+  width: 25vw;
+  height: 35vh;
+}
+.sidebar {
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.basic-concept {
+  margin: 1rem 0;
+}
+
+.pdf-notes {
+  width: 76vw;
+  height: 100vh;
+}
+
+.inbar-div {
+  padding: 0 37%;
+  color: white;
+}
+
+.inbar-nav {
+  border: 2px solid #a2a2a2;
+  padding: 0.5rem 2rem;
+}
+
+/* Progress */
+
+#progress-container {
+  position: relative;
+  left: 60vw;
+  top: 10vh;
+  background: #ffffff;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#progress-bg {
+  fill: none;
+  stroke: #f1f1f1;
+  stroke-width: 10;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 0;
+}
+
+#progress {
+  fill: none;
+  stroke: #ffa500;
+  stroke-width: 20;
+  stroke-dasharray: 315;
+  stroke-dashoffset: 0;
+}
+
+#progressWheel text {
+  font-size: 14px;
+  font-weight: bold;
+  fill: #333333;
+}
+
+/* Certificate */
+
+.certi-container {
+  display: flex;
+  width: 99vw;
+}
+.certi-image {
+  position: relative;
+  top: 10vh;
+  width: 100%;
+  height: 100vh;
+}
+
+.certi-form {
+  padding: 2rem;
+  position: relative;
+  left: 12vw;
+  width: 25vw;
+  top: 25vh;
+  border-radius: 20px;
+  background-color: #60606059;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.certi-form:hover {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.certi-form h2 {
+  color: white;
+}
+
+.certi-input {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 1rem 0;
+}
+
+.certi-text {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 15px;
+}
+.cert-btn {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 1rem 0;
+  padding: 0.5rem 6rem;
+}
+
+/* Sidebar  */
+.sidebar-start {
+  background-color: #c9c7c76b;
+}
+
+.sidebar-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.sidebar-body {
+  font-size: 1.3rem;
+  margin: 0 1rem;
+  color: white;
+}
+
+.sidebar-body a {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.sidebar-body li {
+  padding: 0.5rem 0;
+}
+
+.sidebar-body ul li a:hover {
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+/* .sidebar-logout {
+  position: relative;
+  top: 50vh;
+  left: -1vw;
+} */
+
+/* FOOTER */
+.footer-li {
+  padding: 0;
+}
+.footer {
+  background-color: #1e201d;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: orange;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: orange;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+/*************footer End*****************/
+
+/* Responsive */
+
+@media (max-width: 360px) {
+  .brand-img {
+    margin-left: 0rem;
+    width: 15vw;
+    /* opacity: 0; */
+  }
+  .title-image {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    object-position: -343px 0px;
+    opacity: 0.6;
+  }
+  .title-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+    position: absolute;
+    color: white;
+    padding: 2rem;
+    top: 15vh;
+  }
+
+  .navbar-brand {
+    padding-right: 0rem;
+  }
+
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.801);
+  }
+
+  .about-us-image {
+    width: 100%;
+    top: 2vh;
+    opacity: 0.7;
+  }
+  .about-us-head {
+    color: white;
+    font-size: 2rem;
+    margin: 2rem 0rem;
+  }
+
+  .about-us-para {
+    color: white;
+    font-size: 0.5rem;
+  }
+
+  .about-us-text {
+    position: absolute;
+    padding: 0rem 1rem;
+  }
+  .download-page {
+    width: 100%;
+    height: 50vh;
+    object-position: -261px 0px;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+
+  .download-text {
+    text-align: center;
+    top: 13vh;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    left: 12vw;
+    width: 65vw;
+  }
+
+  .download-btn2 {
+    font-size: 1rem;
+    padding: 5px 15px;
+  }
+
+  .download-container {
+    height: 50vh;
+  }
+
+  .card {
+    padding: 2rem 1rem;
+    margin: 2rem;
+    background-color: #d3d3d322;
+  }
+
+  .customer-row {
+    position: relative;
+    left: 0vw;
+  }
+
+  #carouselExample {
+    display: flex;
+    height: 41vh;
+  }
+
+  .container-customer {
+    margin: 5rem 0rem;
+    padding: 5% 0%;
+  }
+}

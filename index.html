@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- AOS CDN Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS Stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="tp.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/3d5c46f6e6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest version of jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body class="bg-dark">
+    <header>
+      <!-- Navbar -->
+      <div class="d-flex justify-content-around text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar fixed-top">
+          <img class="brand-img" src="/images/brand.png" alt="" />
+          <a class="navbar-brand brand-txt" href="/index.html">CODE HELPER</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark navbar-dark bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel "
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav flex-grow-1 pe-3 d-flex justify-content-center"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-us">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer">CONTACT</a>
+                </li>
+              </ul>
+              <button class="btn btn-outline-warning btn-lg download-btn">
+                <a href="/signup.html">Login</a>
+              </button>
+              <button class="btn btn-outline-warning btn-lg download-btn">
+                <a href="/signup.html">SignUp</a>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Front Page-Image -->
+      <div data-aos="fade-in">
+        <section id="home">
+          <div class="home-page">
+            <div>
+              <img class="title-image" src="/images/home-page.jpeg" alt="" />
+            </div>
+            <div class="row">
+              <div class="title-text col-lg-6 bounce">
+                <h1>
+                  <span
+                    >Unlock Your Potential with Comprehensive Notes And Video
+                    Tutorials Online !!!
+                  </span>
+                </h1>
+
+                <button
+                  type="button"
+                  class="btn btn-outline-warning btn-lg title-btn"
+                >
+                  Start Learning Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <!-- About -->
+      <section id="about-us">
+        <div class="container">
+          <div class="row">
+            <div class="left col-lg-6" data-aos="fade-right">
+              <img class="about-us-image" src="/images/brand.png" alt="" />
+            </div>
+            <div class="about-us-text right col-lg-6" data-aos="fade-left">
+              <h2 class="about-us-head">ABOUT US</h2>
+              <div class="about-us-para">
+                <p>
+                  Code Helper is a platform that helps students and aspiring
+                  programmers to start their coding journey. We provide
+                  high-quality notes and verified video tutorials from top
+                  programmers that are easy to understand and follow.
+                </p>
+                <p>
+                  Our goal is to provide a clear pathway for anyone interested
+                  in learning how to code, regardless of their background or
+                  experience level. Our team of experts is constantly updating
+                  our resources to keep up with the latest programming trends
+                  and technologies.
+                </p>
+                <p>
+                  Join our community today and start your journey towards
+                  becoming an excellent programmer!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Course Details -->
+
+      <!-- Steps to Download App -->
+      <div>
+        <img
+          class="download-page"
+          data-aos="fade-in"
+          src="/images/download-page.jpeg"
+          alt=""
+        />
+        <div class="container download-container" data-aos="fade-up">
+          <h1 class="download-text">
+            So what are you waiting for?<br />
+            Download Code Helper today and start your coding journey with
+            confidence! <br /><br />
+            <button
+              type="button"
+              class="btn btn-outline-warning btn-lg download-btn2"
+            >
+              Download App
+            </button>
+          </h1>
+        </div>
+      </div>
+
+      <!-- Review Form -->
+      <div>
+        <img
+          style="opacity: 0.6"
+          class="review-form-image"
+          data-aos="fade-in"
+          src="https://wallpapercave.com/wp/wp2817158.png"
+          alt=""
+        />
+
+        <div class="row" style="width: 99vw">
+          <div class="card p-4 review-card col-lg-6" data-aos="fade-right">
+            <form id="review-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="review"
+                  class="form-control"
+                  placeholder="Your review"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="stars">Rate us:</label>
+                <select id="stars" class="form-control">
+                  <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
+                  <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
+                  <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
+                  <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
+                  <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-warning my-3">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="review-text text-center col-lg-6" data-aos="fade-left">
+            <h1>
+              We're all ears! Let us know how your journey through our website
+              was and help us serve you better with your valuable feedback.
+            </h1>
+          </div>
+        </div>
+
+        <!-- Customers Review -->
+
+        <div
+          class="container-customer customer-review"
+          style="position: relative; top: 20vh"
+          data-aos="flip-right"
+        >
+          <p style="color: orange">REVIEWS</p>
+          <h1>Our Happy Customers</h1>
+          <div class="customer-row">
+            <div class="customer-review">
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="customer-row">
+                      <div id="reviews" class="mb-3 row"></div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row customer-row"></div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <p style="color: orange; margin: 3rem 0">
+                " Don't let coding difficulties hold you back - visit our App
+                today and take your coding skills to the next level! "
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer id="footer" class="footer" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+              <li class="footer-li"><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BootStrap Js Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Index.Js -->
+    <script src="/index.js"></script>
+    <script src="tp.js"></script>
+
+    <script>
+      AOS.init({
+        offset: 350,
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>

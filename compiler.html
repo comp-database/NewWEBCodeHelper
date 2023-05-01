@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- AOS CDN Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS Stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/3d5c46f6e6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest version of jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body class="bg-dark">
+    <button
+      class="sidebar"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#staticBackdrop"
+      aria-controls="staticBackdrop"
+    >
+      <i
+        class="fa-solid fa-bars fa-2xl"
+        style="color: #000000; border: none"
+      ></i>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-start sidebar-start"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="staticBackdrop"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title sidebar-title" id="staticBackdropLabel">
+          DashBoard
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body sidebar-body">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="/C.html">RoadMap</a></li>
+          <li><a href="/test.html">Test</a></li>
+          <li><a href="/mentors.html">Mentors Support</a></li>
+          <li><a href="/compiler.html">Compiler</a></li>
+        </ul>
+        <button id="signout" class="btn btn-outline-dark sidebar-logout"><a href="/index.html">Logout</a></button>
+      </div>
+    </div>
+    <div class="container text-white">
+      <h1>Compiler</h1>
+      <hr style="color: white" class="my-5" />
+      <script src="//onlinegdb.com/embed/js/ZdVjlM6qL?theme=dark"></script>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/index.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        offset: 350,
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>

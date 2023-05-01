@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- AOS CDN Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS Stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/3d5c46f6e6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest version of jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="container">
+      <button
+      class="sidebar"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#staticBackdrop"
+      aria-controls="staticBackdrop"
+    >
+      <i
+        class="fa-solid fa-bars fa-2xl"
+        style="color: #000000; border: none"
+      ></i>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-start sidebar-start"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="staticBackdrop"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title sidebar-title" id="staticBackdropLabel">DashBoard</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body sidebar-body">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="/C.html">RoadMap</a></li>
+          <li><a href="/test.html">Test</a></li>
+          <li><a href="/mentors.html">Mentors Support</a></li>
+          <li><a href="/compiler.html">Compiler</a></li>
+        </ul>
+        <button id="signout" class="btn btn-outline-dark sidebar-logout"><a href="/index.html">Logout</a></button>
+      </div>
+    </div>
+
+      <h1>C Programming</h1>
+      <hr style="color: white" class="my-5" />
+
+      <nav class="navbar navbar-expand-lg bg-dark my-4">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse inbar-div " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item inbar-nav">
+                <a class="nav-link active text-white" aria-current="page" href="basic.html"
+                  >Videos</a
+                >
+              </li>
+              <li class="nav-item inbar-nav">
+                <a class="nav-link text-white" href="/images/basic-concepts.pdf">Notes</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+
+
+      <div>
+        <embed class="pdf-notes" src="/images/basic-concepts.pdf" />
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/script.js"></script>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        offset: 350,
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>
